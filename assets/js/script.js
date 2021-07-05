@@ -1,11 +1,11 @@
 /*====================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close');
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close');
 
 /*====================== MENU SHOW ====================*/
 if (navToggle) {
-    navToggle.addEventListener('click', function(){
+    navToggle.addEventListener('click', function () {
         navMenu.classList.add('show-menu')
     });
 }
@@ -13,7 +13,7 @@ if (navToggle) {
 /*====================== MENU HIDDEN
 ====================*/
 if (navClose) {
-    navClose.addEventListener('click', function(){
+    navClose.addEventListener('click', function () {
         navMenu.classList.remove('show-menu')
     });
 }
@@ -26,27 +26,27 @@ function linkAction() {
     const navMenu = document.getElementById('nav-menu');
     navMenu.classList.remove('show-menu');
 }
-navLink.forEach(n =>  n.addEventListener('click', linkAction));
+navLink.forEach(n => n.addEventListener('click', linkAction));
 
 /*====================== OPEN SKILL ====================*/
 const skillContent = document.getElementsByClassName('skill-content'),
     skillHeader = document.querySelectorAll('.skill-header');
 
-    function toggleSkills() {
-        let itemClass = this.parentNode.className;
-        
-        for (i = 0; i < skillContent.length; i++) {
-            skillContent[i].className = 'skill_content skill-close';
-        }
+function toggleSkills() {
+    let itemClass = this.parentNode.className;
 
-        if (itemClass === 'skill-content skill-close') {
-            this.parentNode.className = 'skill-content skill-open';
-        }
+    for (i = 0; i < skillContent.length; i++) {
+        skillContent[i].className = 'skill_content skill-close';
     }
 
-    skillHeader.forEach((el) => {
-        el.addEventListener('click', toggleSkills)
-    });
+    if (itemClass === 'skill-content skill-close') {
+        this.parentNode.className = 'skill-content skill-open';
+    }
+}
+
+skillHeader.forEach((el) => {
+    el.addEventListener('click', toggleSkills)
+});
 
 
 /*====================== SWIPER PORTOFOLIO ====================*/
@@ -73,7 +73,7 @@ function ubahWarnaHeader() {
     const nav = document.getElementById('header');
     if (this.scrollY >= 80) {
         nav.classList.add('ubah-warna-header');
-    }else{
+    } else {
         nav.classList.remove('ubah-warna-header');
     }
 }
@@ -85,7 +85,7 @@ function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
     if (this.scrollY >= 500) {
         scrollUp.classList.add('show-scroll-up');
-    }else{
+    } else {
         scrollUp.classList.remove('show-scroll-up');
     }
 }
@@ -107,7 +107,7 @@ if (selectedTheme) {
     themeBtn.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme);
 }
 
-themeBtn.addEventListener('click', function() {
+themeBtn.addEventListener('click', function () {
     document.body.classList.toggle(darkTheme);
     themeBtn.classList.toggle(iconTheme);
     localStorage.setItem('selected-theme', getCurrentTheme());
@@ -116,9 +116,9 @@ themeBtn.addEventListener('click', function() {
 
 
 const yellow = document.getElementById('yellow'),
-        biru = document.getElementById('biru'),
-        merah = document.getElementById('merah'),
-        ungu = document.getElementById('ungu');
+    biru = document.getElementById('biru'),
+    merah = document.getElementById('merah'),
+    ungu = document.getElementById('ungu');
 const html = document.querySelector('html');
 
 yellow.addEventListener('click', function () {
@@ -138,7 +138,7 @@ ungu.addEventListener('click', function () {
 function myFunction(x) {
     if (x.matches) {
         // mobile
-        gsap.from('.home-sosial',{
+        gsap.from('.home-sosial', {
             duration: 1.5,
             x: -100,
             opacity: 0.5
@@ -152,26 +152,27 @@ function myFunction(x) {
             ease: 'bounce'
         });
 
-        gsap.from('.home-sosial',{
+        gsap.from('.home-sosial', {
             duration: 1.5,
             y: -500,
             opacity: 0.5
         });
 
-        gsap.from('.home-scroll',{
+        gsap.from('.home-scroll', {
             duration: 1.5,
             y: 200,
             opacity: 0.5
         });
     }
-  }
-  
-  var x = window.matchMedia("(max-width: 768px)")
-  myFunction(x) // Call listener function at run time
-  x.addListener(myFunction) // Attach listener function on state changes
+}
+
+var x = window.matchMedia("(max-width: 768px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
 
 gsap.from('.home-blob-img', {
     duration: 1.2,
+    delay: 1,
     y: 200,
     opacity: 0.5
 });
@@ -180,19 +181,19 @@ gsap.to(".home-title", {
     duration: 2,
     text: "Hai, Namaku Wakhid",
     ease: "none",
-    delay: 0.7
+    delay: 1
 });
 
 gsap.from(".home-subtitle", {
     duration: 1,
     opacity: 0,
-    delay: 1.2
+    delay: 1.5
 });
 
 gsap.from('.home-description', {
     duration: 1,
     opacity: 0,
-    delay: 1.5
+    delay: 1.8
 });
 
 
