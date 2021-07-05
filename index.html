@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" data-warna="biru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pertofolio</title>
+
+    <!-- ========================  UNICONS  ======================== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ========================  GOOGLE FONTS  ======================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- ========================  AOS CSS  ======================== -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- ========================  SWIPER CSS  ======================== -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- ========================  CSS  ======================== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- ========================  HEADER  ======================== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">Wakhid</a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list grid">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">
+                            <i class="uil uil-estate nav-icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <i class="uil uil-user nav-icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">
+                            <i class="uil uil-file-alt nav-icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portofolio" class="nav-link">
+                            <i class="uil uil-scenery nav-icon"></i> Portofolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <i class="uil uil-message nav-icon"></i> Contact me
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav-close" id="nav-close"></i>
+            </div>
+
+            <div class="nav-btns">
+                <!-- Dark mode -->
+                <div class="yellow" id="yellow"></div>
+                <div class="biru" id="biru"></div>
+                <div class="merah" id="merah"></div>
+                <div class="ungu" id="ungu"></div>
+                <i class="uil uil-moon darkmode" id="dark-mode"></i>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========================  MAIN  ======================== -->
+    <main class="main">
+        <!-- ====================  HOME  ===================== -->
+        <section class="home section" id="home">
+            <div class="home-container container grid">
+                <div class="home-content grid">
+                    <div class="home-sosial">
+                        <a href="https://www.facebook.com/khidwakhid.333.a" target="_blank" class="home-sosial-icon">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/khidkhed_/" target="_blank" class="home-sosial-icon">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="home-img">
+                        <?xml version="1.0" standalone="no"?>
+                        <svg class="home-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0" mask-type="alpha">
+                                <path
+                                    d="M43.1,-53.7C56.7,-40,69.2,-27.2,76.2,-10.1C83.2,7,84.7,28.4,75.1,41.6C65.4,54.8,44.5,59.8,26.9,60.4C9.3,61,-5,57.1,-20.7,53C-36.3,48.9,-53.2,44.7,-65.2,33.2C-77.1,21.7,-84.1,2.8,-81,-14.2C-77.9,-31.3,-64.8,-46.5,-49.7,-59.9C-34.5,-73.3,-17.2,-85,-1.2,-83.5C14.7,-82,29.5,-67.4,43.1,-53.7Z"
+                                    transform="translate(100 100)" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path
+                                    d="M43.1,-53.7C56.7,-40,69.2,-27.2,76.2,-10.1C83.2,7,84.7,28.4,75.1,41.6C65.4,54.8,44.5,59.8,26.9,60.4C9.3,61,-5,57.1,-20.7,53C-36.3,48.9,-53.2,44.7,-65.2,33.2C-77.1,21.7,-84.1,2.8,-81,-14.2C-77.9,-31.3,-64.8,-46.5,-49.7,-59.9C-34.5,-73.3,-17.2,-85,-1.2,-83.5C14.7,-82,29.5,-67.4,43.1,-53.7Z"
+                                    transform="translate(100 100)" />
+                                <image class="home-blob-img" x='18' y='10' xlink:href="assets/img/me.png" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="home-data">
+                        <h1 class="home-title"></h1>
+                        <h3 class="home-subtitle">Pelajar</h3>
+                        <p class="home-description">Disaat air mataku mengalir, aku tidak bisa menggunakan tisuu.. aku
+                            butuh 4 lembar 4 lembar 4 lembar.. saat aku menangis.</p>
+                        <a href="#contact" class="button button-flex">
+                            Contact Me <i class="uil uil-message button-icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home-scroll">
+                    <a href="#about" class="home-scroll-btn button-flexss">
+                        <i class="uil uil-mouse-alt home-scroll-mouse"></i>
+                        <span class="home-scroll-name">Scroll Down</span>
+                        <i class="uil uil-arrow-down home-scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================  ABOUT  ===================== -->
+        <section class="about section" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine"
+            data-aos-offset="200" id="about">
+            <h2 class="section-title">About Me</h2>
+            <span class="section-subtitle">My introduction</span>
+
+            <div class="about-container container grid">
+                <img src="assets/img/about.jpg" alt="" class="about-img" data-aos="flip-left" data-aos-duration="700"
+                    data-aos-offset="200">
+
+                <div class="about-data" data-aos="fade-down" data-aos-delay="500" data-aos-duration="500">
+                    <p class="about-deskripsi">Nama saya abdul wakhid cita-cita saya adalah menjadi hokage ke-69.</p>
+
+                    <div class="about-info">
+                        <div>
+                            <span class="about-info-title">18+</span>
+                            <span class="about-info-name">Years <br> Old</span>
+                        </div>
+                        <div>
+                            <span class="about-info-title">05+</span>
+                            <span class="about-info-name">Completed <br> Project</span>
+                        </div>
+                        <div>
+                            <span class="about-info-title">01+</span>
+                            <span class="about-info-name">Years Learn <br> HTML CSS PHP</span>
+                        </div>
+                    </div>
+
+                    <div class="about-btn">
+                        <a download="" href="assets/pdf/abdulwakhid-cv.pdf" class="button button-flex">
+                            Download CV <i class="uil uil-download-alt button-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================  SKILLS  ===================== -->
+        <section class="skills section" id="skills" data-aos="fade-down" data-aos-duration="800"
+            data-aos-easing="linear" data-aos-offset="100">
+            <h2 class="section-title">Skills</h2>
+            <span class="section-subtitle">My technical level</span>
+
+            <div class="div skill-container container grid">
+                <!-- SKILL 1 -->
+                <div class="skill-content skill-open">
+                    <div class="skill-header">
+                        <i class="uil uil-brackets-curly skill-icon"></i>
+
+                        <div>
+                            <h1 class="skill-title">Frontend developer</h1>
+                        </div>
+
+                        <i class="uil uil-angle-down skill-arrow"></i>
+                    </div>
+
+                    <div class="skill-list grid">
+                        <div class="skill-data">
+                            <div class="skill-title">
+                                <h3 class="skill-name">HTML</h3>
+                                <span class="skill-number">1%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-persentase skill-html"></span>
+                            </div>
+                        </div>
+                        <div class="skill-data">
+                            <div class="skill-title">
+                                <h3 class="skill-name">CSS</h3>
+                                <span class="skill-number">1%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-persentase skill-css"></span>
+                            </div>
+                        </div>
+                        <div class="skill-data">
+                            <div class="skill-title">
+                                <h3 class="skill-name">JAVASCRIPT</h3>
+                                <span class="skill-number">1%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-persentase skill-js"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SKILL 2 -->
+                <div class="skill-content skill-close">
+                    <div class="skill-header">
+                        <i class="uil uil-server-network skill-icon"></i>
+
+                        <div>
+                            <h1 class="skill-title">Backend developer</h1>
+                        </div>
+
+                        <i class="uil uil-angle-down skill-arrow"></i>
+                    </div>
+
+                    <div class="skill-list grid">
+                        <div class="skill-data">
+                            <div class="skill-title">
+                                <h3 class="skill-name">PHP</h3>
+                                <span class="skill-number">1%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-persentase skill-php"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====================  PORTOFOLIO  ===================== -->
+        <section class="portofolio section" id="portofolio" data-aos="fade-down" data-aos-duration="800"
+            data-aos-easing="linear" data-aos-offset="100">
+            <h2 class="section-title">Portofolio</h2>
+            <span class="section-subtitle">My portofolio project</span>
+
+            <div class="portofolio-container container swiper-container" data-aos="zoom-in-up"
+                data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                <div class="swiper-wrapper">
+                    <!-- PORTOFOLIO 1 -->
+                    <div class="portofolio-content grid swiper-slide">
+                        <img src="assets/img/portofolio-1.JPG" alt="" class="portofolio-img">
+
+                        <div class="portofolio-data">
+                            <h3 class="portofolio-title">Sistem Informasi Pengaduan Masyarakat</h3>
+                            <p class="portofolio-deskripsi">Sistem ini digunakan untuk menampung pengaduan dari
+                                masyarakat. Dibuat menggunakan HTML, CSS, JAVASCRIPT & PHP</p>
+                            <a href="#" class="button button-flex button-small portofolio-button">
+                                Demo <i class="uil uil-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- PORTOFOLIO 2 -->
+                    <div class="portofolio-content grid swiper-slide">
+                        <img src="assets/img/portofolio-2.JPG" alt="" class="portofolio-img">
+
+                        <div class="portofolio-data">
+                            <h3 class="portofolio-title">Sistem Informasi Perpustakaan</h3>
+                            <p class="portofolio-deskripsi">Pengelolaan data perpustakaan berbasis Web. Dibuat
+                                menggunakan HTML, CSS, JAVASCRIPT & PHP</p>
+                            <a href="#" class="button button-flex button-small portofolio-button">
+                                Demo <i class="uil uil-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portofolio-icon"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portofolio-icon"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================  CONTACT ME  ===================== -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <span class="section-subtitle">Get in touch</span>
+
+            <div class="contact-container container grid">
+                <div>
+                    <div class="contact-information">
+                        <i class="uil uil-phone contact-icon"></i>
+                        <div class="">
+                            <h3 class="contact-title">Sedot Wc</h3>
+                            <span class="contact-subtitle">+62 83112299237</span>
+                        </div>
+                    </div>
+                    <div class="contact-information">
+                        <i class="uil uil-envelope contact-icon"></i>
+                        <div class="">
+                            <h3 class="contact-title">Email</h3>
+                            <span class="contact-subtitle">malingkundang212@durhaka.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-information">
+                        <i class="uil uil-map-marker contact-icon"></i>
+                        <div class="">
+                            <h3 class="contact-title">Location</h3>
+                            <span class="contact-subtitle">Mars</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact-form grid">
+                    <div class="contact-inputs grid">
+                        <div class="contact-content">
+                            <label for="name" class="contact-label">Name</label>
+                            <input type="text" class="contact-input" name="name">
+                        </div>
+                        <div class="contact-content">
+                            <label for="email" class="contact-label">Email</label>
+                            <input type="email" class="contact-input" name="email">
+                        </div>
+                    </div>
+                    <div class="contact-content">
+                        <label for="project" class="contact-label">Project</label>
+                        <input type="text" class="contact-input" name="project">
+                    </div>
+                    <div class="contact-content">
+                        <label for="pesan" class="contact-label">Message</label>
+                        <textarea name="pesan" id="pesan" cols="0" rows="7" class="contact-input"></textarea>
+                    </div>
+                    <div>
+                        <a href="" class="button buttonflex">
+                            Kirim Bro<i class="uil uil-message button-icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================  FOOTER  ======================== -->
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="footer-container container grid">
+                <div>
+                    <h1 class="footer-title">Wakhid</h1>
+                    <span class="footer-subtitle">Suka gabut</span>
+                </div>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="#about" class="footer-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#portofolio" class="footer-link">Portofolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer-link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer-sosials">
+                    <a href="https://www.facebook.com/khidwakhid.333.a" target="_blank" class="footer-sosial">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/khidkhed_/" target="_blank" class="footer-sosial">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer-copy">&#169; AbdulWakhid. All right reserved</p>
+        </div>
+    </footer>
+
+    <!-- ========================  SCROLL TOP  ======================== -->
+    <a href="#" class="scroll-up" id="scroll-up">
+        <i class="uil uil-arrow-up scroll-up-icon"></i>
+    </a>
+
+    <!-- ========================  SWIPER JAVASCRIPT  ======================== -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- ========================  AOS JAVASCRIPT  ======================== -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- ========================  GSAP  ======================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+
+    <!-- ========================  JAVASCRIPT  ======================== -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
